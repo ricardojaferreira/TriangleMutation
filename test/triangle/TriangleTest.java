@@ -35,5 +35,14 @@ public class TriangleTest {
     testTriangle(1, 1, 1, EQUILATERAL);
     testTriangle(2, 2, 1, ISOSCELES);
     testTriangle(2, 3, 4, SCALENE);
+    testTriangle(1, 2, 4, INVALID);
+    testTriangle(1, 4, 2, INVALID);
+    testTriangle(4, 1, 2, INVALID);
+    testTriangle(2, 2, 4, INVALID);
+    testTriangle(2, 1, 2, ISOSCELES);
+    testTriangle(2, 4, 2, INVALID);
+    testTriangle(1, 2, 2, ISOSCELES);
+    testTriangle(4, 2, 2, INVALID);
   }
+
 }
